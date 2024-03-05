@@ -1,0 +1,59 @@
+nav{
+    transition: all 1s;
+}
+
+.cart{
+    bottom: 22px;
+    left: 22px;
+}
+.setting{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding:15px 10px;
+    gap: 40px;
+    top: 40px;
+    left: 20px;
+    li{
+        transition: all .7s;
+    }
+    li:hover{
+        transform: translateX(10px);
+    }
+    a{
+        cursor: pointer;
+    }
+    a:hover{
+        color: var(--main-color) !important;
+        
+    }
+}
+.setting-form{
+    z-index: 8989;
+}
+.main .head i{
+    right: 20px;
+}
+.setting-form{
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width:768px) {
+    .icons{
+        flex-direction: column;
+    }
+    .user{
+        margin-block: 20px;
+    }
+    .setting{
+        width: 180px;
+
+    }
+    .setting a{
+        font-size: 14px;
+    }
+    .setting-form .main{
+        width: 90% !important;
+    }
+}
